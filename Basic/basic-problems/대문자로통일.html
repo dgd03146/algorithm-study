@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(s) {
+        let answer = '';
+        for (i of s) {
+          if (i.charCodeAt() >= 97 && i.charCodeAt() <= 122) {
+            answer += String.fromCharCode(i.charCodeAt() - 32);
+          } else {
+            answer += i;
+          }
+        }
+        return answer;
+      }
+
+      let str = 'ItisTimeToStudy';
+      console.log(solution(str));
+    </script>
+  </body>
+</html>

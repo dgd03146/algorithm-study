@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(a, b, c) {
+        let answer = "Yes",
+          MAX;
+        if (a > b) {
+          MAX = a;
+          if (MAX > b + c) answer = "No";
+        } else {
+          MAX = b;
+          if (MAX > a + c) answer = "NO";
+        }
+        if (MAX < c) {
+          MAX = c;
+          if (MAX > a + b) answer = "No";
+        }
+
+        return answer;
+      }
+
+      console.log(solution(6, 7, 11));
+    </script>
+  </body>
+</html>
