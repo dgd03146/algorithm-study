@@ -4,6 +4,8 @@ var findDiagonalOrder = function (matrix) {
   let cols = matrix[0].length;
   const result = new Array(rows + cols - 1).fill(null).map(() => []);
 
+  console.log(result);
+
   for (let i = 0; i < rows; i++) {
     for (let j = 0; j < cols; j++) {
       if ((i + j) % 2 === 0) {
